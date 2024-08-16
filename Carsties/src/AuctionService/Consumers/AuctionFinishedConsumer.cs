@@ -19,7 +19,7 @@ namespace AuctionService.Consumers
         {
             Console.WriteLine("--> Consuming auction finished");
 
-            var auction = await _dbContext.Auctions.FindAsync(context.Message.AuctionId);
+            var auction = await _dbContext.Auctions.FindAsync(Guid.Parse(context.Message.AuctionId));
 
             if (context.Message.ItemSold)
             {
@@ -28,7 +28,7 @@ namespace AuctionService.Consumers
             }
 
             auction.Status = auction.SoldAmount > auction.ReservePrice
-            ? Status.Finished : Status.ReserveNotMet;
+                ? Status.Finished : Status.ReserveNotMet;
 
             await _dbContext.SaveChangesAsync();
         }
