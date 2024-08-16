@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiddingService", "src\Biddi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{62A7F4D1-737F-441A-A9E7-42A8764039A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.UnitTests", "tests\AuctionService.UnitTests\AuctionService.UnitTests.csproj", "{59806C25-F166-419A-9D55-B1CFAEE9F0CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionService.UnitTests", "tests\AuctionService.UnitTests\AuctionService.UnitTests.csproj", "{59806C25-F166-419A-9D55-B1CFAEE9F0CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService.IntegrationTests", "tests\AuctionService.IntegrationTests\AuctionService.IntegrationTests.csproj", "{96EE1ED4-0B64-4CDF-891F-539EEF0D1B06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionService.IntegrationTests", "tests\AuctionService.IntegrationTests\AuctionService.IntegrationTests.csproj", "{96EE1ED4-0B64-4CDF-891F-539EEF0D1B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "src\NotificationService\NotificationService.csproj", "{A55B6C56-01E3-415C-824F-BFB30461A317}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{96EE1ED4-0B64-4CDF-891F-539EEF0D1B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96EE1ED4-0B64-4CDF-891F-539EEF0D1B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96EE1ED4-0B64-4CDF-891F-539EEF0D1B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55B6C56-01E3-415C-824F-BFB30461A317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55B6C56-01E3-415C-824F-BFB30461A317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55B6C56-01E3-415C-824F-BFB30461A317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55B6C56-01E3-415C-824F-BFB30461A317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +80,7 @@ Global
 		{9A7961CC-22AC-49F2-B8B7-80CA9D8FF9CB} = {A6688C51-B877-4727-9915-929E690A3455}
 		{59806C25-F166-419A-9D55-B1CFAEE9F0CF} = {62A7F4D1-737F-441A-A9E7-42A8764039A1}
 		{96EE1ED4-0B64-4CDF-891F-539EEF0D1B06} = {62A7F4D1-737F-441A-A9E7-42A8764039A1}
+		{A55B6C56-01E3-415C-824F-BFB30461A317} = {A6688C51-B877-4727-9915-929E690A3455}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {416764E4-654E-4A7E-9BBC-3F6FFC66C9AD}
